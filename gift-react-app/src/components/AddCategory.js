@@ -13,11 +13,11 @@ export const AddCategory = ({ setCategories }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (inputValue.trim() == '') {
+        if (inputValue.trim() === '') {
             alert('El campo no debe estar vacio')
             return false;
         } else {
-            setCategories((categ) => [...categ, inputValue]) //<-- HEREDA DE COMPONENTE PADRE PARA AÑADIR CATEGORIA 
+            setCategories((categ) => [inputValue,...categ ]) //<-- HEREDA DE COMPONENTE PADRE PARA AÑADIR CATEGORIA 
             setInputValue('');
         }
     }

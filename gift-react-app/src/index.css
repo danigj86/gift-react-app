@@ -10,3 +10,33 @@ input{
   font-size: 1.2rem;
   color: grey;
 }
+.gifCard{
+  align-items: center;
+  border: 1px solid grey;
+  display: inline-block;
+  margin: 3px;
+  max-height: 400px;
+  min-width: 260px;
+  text-align: center;
+  overflow: hidden;
+  width: calc(100% / 4 )
+    
+}
+
+.gifCard img{
+  background-position: center;
+  height: cover;
+  max-height: 60%;
+  
+  /* max-height: 170px; */
+}
+
+.gif-grid{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+  
+}
+
