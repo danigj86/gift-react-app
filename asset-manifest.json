@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gift-react-app/static/css/main.834c9048.chunk.css",
+    "main.js": "/gift-react-app/static/js/main.34c7c177.chunk.js",
+    "main.js.map": "/gift-react-app/static/js/main.34c7c177.chunk.js.map",
+    "runtime-main.js": "/gift-react-app/static/js/runtime-main.0230da44.js",
+    "runtime-main.js.map": "/gift-react-app/static/js/runtime-main.0230da44.js.map",
+    "static/js/2.c648fe79.chunk.js": "/gift-react-app/static/js/2.c648fe79.chunk.js",
+    "static/js/2.c648fe79.chunk.js.map": "/gift-react-app/static/js/2.c648fe79.chunk.js.map",
+    "index.html": "/gift-react-app/index.html",
+    "static/css/main.834c9048.chunk.css.map": "/gift-react-app/static/css/main.834c9048.chunk.css.map",
+    "static/js/2.c648fe79.chunk.js.LICENSE.txt": "/gift-react-app/static/js/2.c648fe79.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0230da44.js",
+    "static/js/2.c648fe79.chunk.js",
+    "static/css/main.834c9048.chunk.css",
+    "static/js/main.34c7c177.chunk.js"
+  ]
+}
