@@ -21,14 +21,18 @@ export const AddCategory = ({ setCategories }) => {
             setInputValue('');
         }
     }
+    const reset = (e) =>{
+        setInputValue('')
+    }
 
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form className='animate__animated animate__fadeInDown' onSubmit={handleSubmit}>
             <input
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
+                onClick={reset}
             />
         </form>
     )

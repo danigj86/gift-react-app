@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { GifGridItem } from './GifGridItem'
+/* import { GifGridItem } from './GifGridItem' */
 
 export const GiftGrid = ({ category }) => {
 
@@ -9,11 +9,9 @@ export const GiftGrid = ({ category }) => {
         getGifs()
     }, [])
 
-
-
     const getGifs = async () => {
         //const apiKey = 'Zd4DcGItNa2Psr4J4Rz9k9vnurOWbHJu';
-        const url = `https://api.giphy.com/v1/gifs/search?limit=6&q=${category}&api_key=Zd4DcGItNa2Psr4J4Rz9k9vnurOWbHJu`;
+        const url = `https://api.giphy.com/v1/gifs/search?limit=6&q=${encodeURI(category)}&api_key=Zd4DcGItNa2Psr4J4Rz9k9vnurOWbHJu`;
         const resp = await fetch(url);
         const { data } = await resp.json();
         const gifs = data.map(img => {
@@ -30,17 +28,29 @@ export const GiftGrid = ({ category }) => {
 
     return (
         < >
-            <h3>Búsqueda: {category}</h3>
+            <h3 className='animate__animated animate__fadeIn busqueda'>Búsqueda: {category}</h3>
             <hr />
-            <div className="gif-grid">
+            <div className=" gif-grid">
                 {
                     images.map(img => {
-                        return <GifGridItem
+                        return < div key={img.id} className=" animate__animated animate__fadeIn gifCard" >
+                            <img src={img.url} alt="" />
+                            <details>
+                                <summary>Info</summary>
+                                <h5>Nombre: {img.title}</h5>
+                                <p> <b>Url:</b> {img.url}</p>
+                            </details>
+                           
+                        </div>
+                        //CREANDO UN COMPONENTE ESPECIFICO PARA CADA GIF
+                        /* return {/* <GifGridItem
                             key={img.id}
-                            img={img} />
+                            img={img} /> 
+                        
+                        } */
                     })
                 }
-            </div>
+            </div>  <br />
 
 
         </>

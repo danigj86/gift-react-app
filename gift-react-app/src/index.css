@@ -3,6 +3,11 @@
 }
 body{
   padding: 60px;
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
 input{
@@ -10,19 +15,32 @@ input{
   font-size: 1.2rem;
   color: grey;
 }
-.gifCard{
-  align-items: center;
-  border: 1px solid grey;
-  display: inline-block;
-  margin: 3px;
-  max-height: 400px;
-  min-width: 260px;
-  text-align: center;
-  overflow: hidden;
-  width: calc(100% / 4 )
-    
-}
 
+    
+
+.titulo{
+  letter-spacing: 5px;
+  border-radius: 40px;
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(233, 236, 241, 0.164);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: white;
+  font-size: 34px;
+  padding: 20px;
+}
+.busqueda{
+  border-radius: 40px;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(233, 236, 241, 0.164);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: white;
+  letter-spacing: 3px;
+  padding: 20px;
+}
 .gifCard img{
   background-position: center;
   height: cover;
@@ -36,7 +54,41 @@ input{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border-radius: 40px;
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(233, 236, 241, 0.164);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+ 
+}
+.gif-grid details{
   
-  
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(175, 20, 128, 0.637);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: white;
+  /* letter-spacing: 3px; */
+  padding: 10px;
+
 }
 
+.gif-grid details p{
+  font-size: 14px;
+  overflow-x: scroll;
+ 
+}
+
+.gifCard{
+  align-items: center;
+  border: 1px solid grey;
+  display: inline-block;
+  margin: 3px;
+  max-height: 500px;
+  min-width: 260px;
+  text-align: center;
+  overflow: hidden;
+  width: calc(100% / 4 )
+}
